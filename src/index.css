@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  section {
+    @apply px-6 sm:px-8 md:px-16 lg:px-24 py-16 md:py-24;
+  }
+
+  ::selection {
+    @apply bg-white/20 text-white;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-sm;
+  }
+  
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-lg border border-white/5 shadow-lg;
+  }
+  
+  .container-custom {
+    @apply max-w-[1440px] mx-auto px-6 sm:px-8 md:px-16 lg:px-24;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 rounded-full bg-white text-black font-medium transition-all duration-300 hover:shadow-lg hover:shadow-white/10 active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-full bg-secondary border border-white/5 text-white font-medium transition-all duration-300 hover:shadow-lg hover:border-white/10 active:scale-[0.98];
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-display font-bold mb-8 tracking-tight;
+  }
+  
+  .chip {
+    @apply inline-block px-3 py-1 rounded-full bg-white/10 text-white text-sm font-medium;
+  }
+  
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-white via-white/90 to-white/80 bg-clip-text text-transparent;
+  }
+
+  .neo-card {
+    @apply bg-secondary/50 backdrop-blur-lg border border-white/5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)];
+  }
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
