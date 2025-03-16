@@ -100,7 +100,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-white/50">Email</p>
-                  <p className="font-medium text-white"><a href="mailto:daevikjain@gmail.com" className="hover:underline">daevikjain@gmail.com</a></p>
+                  <p className="font-medium text-white"><a href="mailto:d59jain@uwaterloo.ca" className="hover:underline">d59jain@uwaterloo.ca</a></p>
                 </div>
               </div>
               
@@ -179,7 +179,7 @@ const Contact = () => {
                   type="submit"
                   disabled={loading}
                   className="w-full btn-primary flex justify-center items-center"
-                  onClick={() => window.location.href = `mailto:daevikjain@gmail.com?subject=Message from ${formState.name}&body=${formState.message}`}
+                  onClick={() => window.location.href = `mailto:d59jain@uwaterloo.ca?subject=Message from ${formState.name}&body=${formState.message}`}
                 >
                   {loading ? (
                     <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

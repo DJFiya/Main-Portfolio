@@ -22,8 +22,8 @@ const Footer = () => {
             {[
               { name: 'GitHub', icon: <Github className="w-5 h-5" />, url: 'https://github.com/DJFiya' },
               { name: 'LinkedIn', icon: <Linkedin className="w-5 h-5" />, url: 'https://www.linkedin.com/in/daevik-jain/' },
-              { name: 'Phone', icon: <Phone className="w-5 h-5" />, url: 'tel:+1234567890' },
-              { name: 'Mail', icon: <Mail className="w-5 h-5" />, url: 'mailto:daevikjain@gmail.com' },
+              { name: 'Phone', icon: <Phone className="w-5 h-5" />, url: 'tel:+16476157812' },
+              { name: 'Mail', icon: <Mail className="w-5 h-5" />, url: 'mailto:d59jain@uwaterloo.ca' },
             ].map(social => (
               <a
                 key={social.name}
