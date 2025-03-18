@@ -56,7 +56,7 @@ const About = () => {
               )}
               style={{ animationDelay: "0.2s" }}
             >
-              I’m a highly motivated software engineering student with hands-on experience across diverse domains, including web development, data science, game development, and AI. My projects demonstrate my ability to quickly adapt and deliver impactful solutions—whether creating interactive web apps, designing data-driven models, or building AI-powered tools. I approach each challenge with a problem-solving mindset and a focus on innovation, ensuring that my work is not only functional but also groundbreaking.            </p>
+              I’m a highly motivated biomedical engineering student with hands-on experience across diverse domains, including web development, data science, game development, and AI. My projects demonstrate my ability to quickly adapt and deliver impactful solutions—whether creating interactive web apps, designing data-driven models, or building AI-powered tools. I approach each challenge with a problem-solving mindset and a focus on innovation, ensuring that my work is not only functional but also groundbreaking.            </p>
             <p 
               className={cn(
                 "text-white/60 mb-6 opacity-0",
